@@ -24,7 +24,6 @@ sg.draw(colors=['hotpink', 'hotpink', 'cornflowerblue', 'cornflowerblue'],
 ![Blue Spiral](Output-BlueSpiral.png)
 
 ```
-#!/usr/bin/env python3
 import spirographical as sg
 sg.draw(colors=['lightsteelblue', 'cornflowerblue', 'royalblue',
                 'blue', 'mediumblue', 'navy', 'midnightblue'],
