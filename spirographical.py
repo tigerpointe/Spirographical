@@ -46,6 +46,7 @@ https://www.cancer.org/
 """
 
 import math
+import importlib
 import turtle
 
 
@@ -69,6 +70,7 @@ def draw(colors=['red', 'purple', 'blue', 'green', 'yellow', 'orange'],
     """
 
     # Create the drawing board
+    importlib.reload(turtle)  # hack to fix TurtleScreen._RUNNING issue
     turtle.title(title)       # window title
     turtle.setup(size, size)  # width and height in pixels
     turtle.bgcolor(bgcolor)   # background color
