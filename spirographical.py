@@ -147,7 +147,7 @@ def loop(colors=['red', 'purple', 'blue', 'green', 'yellow', 'orange'],
     allcolors = (colors * sparseness)
 
     # Loop through each value in the range
-    circle = 360 # degrees in a circle
+    circle = 360  # degrees in a circle
     arc = circle // len(allcolors)  # size of each color arc 
     for x in range(arc):
         c = ((x * len(allcolors)) // arc)  # loop number selects pen color
