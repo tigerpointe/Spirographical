@@ -132,28 +132,28 @@ def loop(colors=['red', 'purple', 'blue', 'green', 'yellow', 'orange'],
     """
 
     # Create the drawing board
-    importlib.reload(turtle) # hack to fix TurtleScreen._RUNNING issue
-    turtle.title(title) # window title
-    turtle.setup(size, size) # width and height in pixels
-    turtle.bgcolor(bgcolor) # background color
+    importlib.reload(turtle)  # hack to fix TurtleScreen._RUNNING issue
+    turtle.title(title)       # window title
+    turtle.setup(size, size)  # width and height in pixels
+    turtle.bgcolor(bgcolor)   # background color
 
     # Configure the pen
-    t = turtle.Pen() # new pen
-    t.pensize(pensize) # pen size
-    t.speed(0) # speed 0=fastest, or 1=slow to 10=fast
-    t.hideturtle() # hide turtle
+    t = turtle.Pen()    # new pen
+    t.pensize(pensize)  # pen size
+    t.speed(0)          # speed 0=fastest, or 1=slow to 10=fast
+    t.hideturtle()      # hide turtle
 
     # Repeat the colors array for increased spareseness
     allcolors = (colors * sparseness)
 
     # Loop through each value in the range
     circle = 360 # degrees in a circle
-    arc = circle // len(allcolors) # size of each color arc 
+    arc = circle // len(allcolors)  # size of each color arc 
     for x in range(arc):
-        c = ((x * len(allcolors)) // arc) # loop number selects pen color
+        c = ((x * len(allcolors)) // arc)  # loop number selects pen color
         t.pencolor(allcolors[c])
-        t.circle(radius=radius, steps=steps) # draw the next circle
-        t.left(len(allcolors)) # colors count determines rotation
+        t.circle(radius=radius, steps=steps)  # draw next circle
+        t.left(len(allcolors))  # colors count determines rotation
 
     # Wait for the click event to exit (optional)
     if (exitonclick):
