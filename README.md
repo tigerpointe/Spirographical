@@ -30,6 +30,13 @@ sg.draw(colors=['lightsteelblue', 'cornflowerblue', 'royalblue',
         title='Blue Spiral', loops=40, skiploops=1, twist=3)
 ```
 
+![Looping Rainbow](Output-LoopingRainbow.png)
+
+```
+import spirographical as sg
+sg.loop()
+```
+
 Please consider giving to cancer research.
 
 ## Make a Difference
