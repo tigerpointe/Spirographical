@@ -143,12 +143,12 @@ def loop(colors=['red', 'purple', 'blue', 'green', 'yellow', 'orange'],
     t.speed(0)          # speed 0=fastest, or 1=slow to 10=fast
     t.hideturtle()      # hide turtle
 
-    # Repeat the colors array for increased spareseness
+    # Repeat the colors array for increased sparseness
     allcolors = (colors * sparseness)
 
     # Loop through each value in the range
     circle = 360  # degrees in a circle
-    arc = circle // len(allcolors)  # size of each color arc 
+    arc = circle // len(allcolors)  # size of each color arc
     for x in range(arc):
         c = ((x * len(allcolors)) // arc)  # loop number selects pen color
         t.pencolor(allcolors[c])
