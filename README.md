@@ -37,6 +37,14 @@ import spirographical as sg
 sg.loop()
 ```
 
+![Looping Rainbow](Output-VioletLace.png)
+
+```
+sg.loop(colors=['#d2b4de', '#bb8fce', '#a569bd', '#8e44ad',
+                '#8e44ad', '#a569bd', '#bb8fce', '#d2b4de'],
+        title='Violet Lace', steps=6)
+```
+
 Please consider giving to cancer research.
 
 ## Make a Difference

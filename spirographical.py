@@ -39,6 +39,12 @@ sg.draw(colors=['lightsteelblue', 'cornflowerblue', 'royalblue',
                 'blue', 'mediumblue', 'navy', 'midnightblue'],
         title='Blue Spiral', loops=40, skiploops=1, twist=3)
 
+#!/usr/bin/env python3
+import spirographical as sg
+sg.loop(colors=['#d2b4de', '#bb8fce', '#a569bd', '#8e44ad',
+                '#8e44ad', '#a569bd', '#bb8fce', '#d2b4de'],
+        title='Violet Lace', steps=6)
+
 If you enjoy this software, please do something kind for free.
 
 Please consider giving to cancer research.
